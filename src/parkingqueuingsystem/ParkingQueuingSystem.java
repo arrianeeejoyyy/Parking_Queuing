@@ -11,7 +11,8 @@ public class ParkingQueuingSystem {
    
     public static void main(String[] args) {
       
-
+          Start lc = new Start();
+       lc.setVisible(true);
 
     }
     
