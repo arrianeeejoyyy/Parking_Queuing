@@ -1,5 +1,7 @@
 package parkingqueuingsystem;
 
+import parkingqueuingsystem.messagedialog.slotconfirmation;
+
 public class Selectpark extends javax.swing.JFrame {
 
     
@@ -14,7 +16,7 @@ public class Selectpark extends javax.swing.JFrame {
 
         jButton1 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
-        jButton2 = new javax.swing.JButton();
+        btn_R01 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
@@ -28,8 +30,13 @@ public class Selectpark extends javax.swing.JFrame {
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 380, 80, 80));
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 350, 100, 20));
 
-        jButton2.setContentAreaFilled(false);
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 383, 80, 80));
+        btn_R01.setContentAreaFilled(false);
+        btn_R01.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_R01ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn_R01, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 383, 80, 80));
 
         jButton3.setContentAreaFilled(false);
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 380, 80, 80));
@@ -45,6 +52,12 @@ public class Selectpark extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btn_R01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_R01ActionPerformed
+       slotconfirmation scf = new slotconfirmation();
+       scf.setVisible(true);
+       
+    }//GEN-LAST:event_btn_R01ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -82,8 +95,8 @@ public class Selectpark extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_R01;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
