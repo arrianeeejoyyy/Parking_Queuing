@@ -14,6 +14,11 @@ public class ParkingQueuingSystem {
           Start lc = new Start();
        lc.setVisible(true);
 
+       
+       QueuingScreen sc = new QueuingScreen();
+       sc.setVisible(true);
+       
+       
     }
     
 }
