@@ -16,24 +16,26 @@ public class slotconfirmation extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        yes = new javax.swing.JButton();
-        no = new javax.swing.JButton();
+        btn_YES = new javax.swing.JButton();
+        btn_NO = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBounds(new java.awt.Rectangle(500, 300, 0, 0));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        yes.setContentAreaFilled(false);
-        yes.addActionListener(new java.awt.event.ActionListener() {
+        btn_YES.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        btn_YES.setContentAreaFilled(false);
+        btn_YES.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                yesActionPerformed(evt);
+                btn_YESActionPerformed(evt);
             }
         });
-        getContentPane().add(yes, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 240, 140, 30));
+        getContentPane().add(btn_YES, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, 160, 40));
 
-        no.setContentAreaFilled(false);
-        getContentPane().add(no, new org.netbeans.lib.awtextra.AbsoluteConstraints(295, 240, 150, 30));
+        btn_NO.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        btn_NO.setContentAreaFilled(false);
+        getContentPane().add(btn_NO, new org.netbeans.lib.awtextra.AbsoluteConstraints(295, 240, 150, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/parkingqueuingsystem/IMAGE_MD/slotconfirm.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -41,7 +43,7 @@ public class slotconfirmation extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void yesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yesActionPerformed
+    private void btn_YESActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_YESActionPerformed
        this.setVisible(false);
         
        Selectpark sp = new Selectpark();
@@ -49,7 +51,7 @@ public class slotconfirmation extends javax.swing.JFrame {
        
        PLATENUMBER PN = new PLATENUMBER();
        PN.setVisible(true);
-    }//GEN-LAST:event_yesActionPerformed
+    }//GEN-LAST:event_btn_YESActionPerformed
 
     /**
      * @param args the command line arguments
@@ -87,8 +89,8 @@ public class slotconfirmation extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_NO;
+    private javax.swing.JButton btn_YES;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JButton no;
-    private javax.swing.JButton yes;
     // End of variables declaration//GEN-END:variables
 }
